@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "OpenAITranslationPlugig to trasnlate Cordova apps using openAI. Created by Rooz Farhadi",
     "cordova": {
-      "id": "", 
+      "id": "com.example.openaitranslation", 
       "platforms": [ 
         "ios" 
       ]
