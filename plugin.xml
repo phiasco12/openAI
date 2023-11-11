@@ -6,10 +6,20 @@
         <clobbers target="OpenAITranslation" />
     </js-module>
     <platform name="android">
-        <config-file parent="/*" target="res/xml/config.xml">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="OpenAITranslationPlugin">
-                <param name="android-package" value="com.example.openaitranslation" />
+                <param name="android-package" value="com.example.openaitranslation.OpenAITranslationPlugin" />
             </feature>
         </config-file>
+        <source-file src="src/android/OpenAITranslationPlugin.java" target-dir="src/com/example/openaitranslation" />
+    </platform>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="OpenAITranslationPlugin">
+                <param name="ios-package" value="OpenAITranslationPlugin" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/OpenAITranslationPlugin.m" />
     </platform>
 </plugin>
