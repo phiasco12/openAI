@@ -1,6 +1,6 @@
 {
     "name": "OpenAITranslationPlugin",
-    "version": "1.0.0"",
+    "version": "1.0.0",
     "description": "OpenAITranslationPlugig to trasnlate Cordova apps using openAI. Created by Rooz Farhadi",
     "cordova": {
       "id": "", 
