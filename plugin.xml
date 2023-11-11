@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.example.openaitranslation" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>OpenAITranslationPlugin</name>
+    <js-module name="OpenAITranslationPlugin" src="www/openaitranslation.js">
+        <clobbers target="OpenAITranslation" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="OpenAITranslationPlugin">
+                <param name="android-package" value="com.example.openaitranslation.OpenAITranslationPlugin" />
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
